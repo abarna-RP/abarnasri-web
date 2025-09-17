@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { FaEnvelope, FaLinkedin, FaGithub } from 'react-icons/fa';
-import contactImage from '../assets/getin.png'; // <-- படத்தைப் பதிகிறோம்
+import contactImage from '../assets/getin.png';
 
 const ContactSection = styled.section`
   width: 100%;
@@ -11,6 +11,7 @@ const ContactSection = styled.section`
   align-items: center;
   gap: 3rem;
   background-color: var(--bg-secondary);
+  border: 2px solid var(--highlight-gold); /* <-- பார்டர் சேர்க்கப்பட்டுள்ளது */
   border-radius: 20px;
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
 `;
@@ -76,15 +77,15 @@ function GetInTouch() {
         <ContactLinks>
           <LinkItem>
             <LinkIcon><FaEnvelope /></LinkIcon>
-            <a href="mailto:abarnasri@email.com">abarnasri@email.com</a>
+            <a href="mailto:abarnasri3692@gmail.com">abarnasri3692@gmail.com</a>
           </LinkItem>
           <LinkItem>
             <LinkIcon><FaLinkedin /></LinkIcon>
-            <a href="https://linkedin.com/in/abarnasri" target="_blank" rel="noopener noreferrer">linkedin.com/in/abarnasri</a>
+            <a href="https://linkedin.com/in/abarnasri-prabakaran-36913a253" target="_blank" rel="noopener noreferrer">linkedin.com/in/abarnasri-prabakaran-36913a253</a>
           </LinkItem>
           <LinkItem>
             <LinkIcon><FaGithub /></LinkIcon>
-            <a href="https://github.com/abarnasri" target="_blank" rel="noopener noreferrer">github.com/abarnasri</a>
+            <a href="https://github.com/abarna-RP" target="_blank" rel="noopener noreferrer">github.com/abarna-RP</a>
           </LinkItem>
         </ContactLinks>
       </ContactContent>

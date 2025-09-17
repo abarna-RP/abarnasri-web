@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import aboutImage from '../assets/about me.png'; // <-- படத்தைப் பதிகிறோம்
+import aboutImage from '../assets/about me.png';
 
 const AboutSection = styled.section`
   display: flex;
@@ -9,10 +9,15 @@ const AboutSection = styled.section`
   width: 100%;
   padding: 5rem 0;
   gap: 4rem;
+  background-color: var(--bg-secondary);
+  border: 2px solid var(--accent-pink); /* <-- பார்டர் சேர்க்கப்பட்டுள்ளது */
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
 `;
 
 const AboutText = styled.div`
   width: 60%;
+  padding: 3rem;
 `;
 
 const AboutImage = styled.img`

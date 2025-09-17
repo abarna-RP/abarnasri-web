@@ -3,64 +3,35 @@ import styled from 'styled-components';
 
 const PhilosophySection = styled.section`
   width: 100%;
+  padding: 5rem;
   text-align: center;
-  padding: 5rem 0;
+  background-color: var(--bg-secondary);
+  border: 2px solid var(--highlight-gold); /* <-- இங்கு பார்டர் சேர்க்கப்பட்டுள்ளது */
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
 `;
 
 const SectionTitle = styled.h2`
-  font-size: 3rem; /* Larger title */
-  margin-bottom: 3.5rem;
-  color: var(--highlight-gold); /* Shiny gold title */
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: var(--accent-pink);
 `;
 
-const PhilosophyGrid = styled.div`
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
-  gap: 2.5rem; /* Increased gap */
-`;
-
-const PhilosophyBox = styled.div`
-  border: 2px solid;
-  border-radius: 15px;
-  padding: 2.5rem; /* Larger padding */
-  text-align: left;
-  background-color: var(--bg-secondary); /* Use lighter navy */
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4); /* Subtle shadow */
-  transition: transform 0.3s ease, border-color 0.3s ease;
-  &:hover {
-    transform: translateY(-5px);
-  }
-  border-color: ${props => props.color === 'yellow' ? 'var(--highlight-gold)' : 'var(--accent-pink)'}; /* Use new vars */
-`;
-
-const PhilosophyTitle = styled.h3`
-  font-size: 1.8rem; /* Larger title */
-  margin-bottom: 0.8rem;
-  color: var(--text-primary);
-`;
-
-const PhilosophyDescription = styled.p`
+const PhilosophyText = styled.p`
+  font-size: 1.2rem;
   color: var(--text-secondary);
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto;
 `;
 
 function DevelopmentPhilosophy() {
   return (
     <PhilosophySection>
-      <SectionTitle>Development Philosophy</SectionTitle>
-      <PhilosophyGrid>
-        <PhilosophyBox color="yellow">
-          <PhilosophyTitle>Clean Code</PhilosophyTitle>
-          <PhilosophyDescription>Writing maintainable, readable code that follows industry best practices and coding standards.</PhilosophyDescription>
-        </PhilosophyBox>
-        <PhilosophyBox color="pink">
-          <PhilosophyTitle>User-Centric Design</PhilosophyTitle>
-          <PhilosophyDescription>Prioritizing user experience with intuitive interfaces and seamless functionality.</PhilosophyDescription>
-        </PhilosophyBox>
-        <PhilosophyBox color="yellow">
-          <PhilosophyTitle>Continuous Learning</PhilosophyTitle>
-          <PhilosophyDescription>Staying current with emerging technologies and constantly improving my skill set.</PhilosophyDescription>
-        </PhilosophyBox>
-      </PhilosophyGrid>
+      <SectionTitle>My Development Philosophy</SectionTitle>
+      <PhilosophyText>
+        I believe in writing clean, modular, and maintainable code. My approach is to build applications that are not just functional, but also scalable and easy for other developers to understand. I am a strong advocate for a user-centric design process, ensuring that the final product is both powerful and intuitive.
+      </PhilosophyText>
     </PhilosophySection>
   );
 }

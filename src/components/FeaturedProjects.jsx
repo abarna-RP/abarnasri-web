@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import project1Image from '../assets/ecommerce.png'; // <-- முதல் படத்தைப் பதிகிறோம்
-import project2Image from '../assets/taskapp.png'; // <-- இரண்டாவது படத்தைப் பதிகிறோம்
+import project1Image from '../assets/ecommerce.png';
+import project2Image from '../assets/taskapp.png';
 
 const ProjectsSection = styled.section`
   width: 100%;
@@ -26,14 +26,16 @@ const ProjectCard = styled.div`
   justify-content: space-between;
   gap: 3rem;
   background-color: var(--bg-secondary);
+  border: 2px solid var(--accent-pink); /* <-- பார்டர் சேர்க்கப்பட்டுள்ளது */
   border-radius: 20px;
   padding: 3rem;
   margin-bottom: 2.5rem;
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
   &:hover {
     transform: translateY(-5px);
     box-shadow: 0 12px 40px rgba(0, 0, 0, 0.7);
+    border-color: var(--highlight-gold); /* <-- ஹோவர் செய்யும் போது நிறம் மாறும் */
   }
 `;
 

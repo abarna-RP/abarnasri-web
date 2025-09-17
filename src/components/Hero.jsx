@@ -10,6 +10,7 @@ const HeroSection = styled.section`
   padding: 5rem 0;
   gap: 2rem;
   background-color: var(--bg-secondary);
+   border: 2px solid var(--highlight-gold); 
   border-radius: 20px;
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
 `;
@@ -70,7 +71,7 @@ function Hero() {
       <RightContent>
         <NameTitle>Abarnasri</NameTitle>
         <Subtitle>Full Stack Developer crafting scalable web solutions with precision</Subtitle>
-        <ResumeButton href="/path/to/your/resume.pdf" download>
+        <ResumeButton href="/public/Resume - Abarnasri ..pdf" download>
           Download Resume
         </ResumeButton>
       </RightContent>
