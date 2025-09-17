@@ -71,7 +71,7 @@ function Hero() {
       <RightContent>
         <NameTitle>Abarnasri</NameTitle>
         <Subtitle>Full Stack Developer crafting scalable web solutions with precision</Subtitle>
-        <ResumeButton href="/public/Resume - Abarnasri ..pdf" download>
+        <ResumeButton href="/Resume - Abarnasri ..pdf" download>
           Download Resume
         </ResumeButton>
       </RightContent>
